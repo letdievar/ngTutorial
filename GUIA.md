@@ -27,6 +27,46 @@ Ver mas: https://docs.angularjs.org/guide/concepts
 https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 https://github.com/toddmotto/angular-styleguide
 
+# Inicio
+Crea una carpeta app, y dentro crea un archivo index.html
+
+```html
+
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS tutorial</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  </head>
+  <body>
+
+    <ul>
+      <li>
+        <span>Nexus S</span>
+        <p>
+          Fast just got faster with Nexus S.
+        </p>
+      </li>
+      <li>
+        <span>Motorola XOOM™ with Wi-Fi</span>
+        <p>
+          The Next, Next Generation tablet.
+        </p>
+      </li>
+    </ul>
+
+  </body>
+</html>
+```
+
+Y un archivo app.css
+```css
+body {
+  font-family: sans, "Verdana";
+}
+```
 
 ## Next steps
 Ejecuta: 
