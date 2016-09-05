@@ -1,6 +1,6 @@
 
 angular.
-  module('tutApp').
+  module('phoneList').
   component('phoneList', {
 		// se indica el template
     template:
