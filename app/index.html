@@ -6,13 +6,21 @@
     <link rel="stylesheet" href="app.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="app.js"></script>
-    <script src="phone-list.component.js"></script>
   </head>
-  <!-- notese que se borro ng-controller -->
-  <body>
+  <body ng-controller="todoController">
 
-    <!-- Llamamos al componente -->
-    <phone-list></phone-list>
+    <h2>Todo List</h2>
+    <ul>
+      <li ng-repeat="item in todo_list">
+        <span>{{ item.description }}</span>
+        <button ng-click="eliminar(item)">Remove</button>
+      </li>
+    </ul>
+    <h3>Add item</h3>
+    <div>
+      <input placeholder="Enter name" ng-model="item_input"></input>
+      <button ng-click="addItem()">Add</button>
+    </div>
 
   </body>
 </html>
